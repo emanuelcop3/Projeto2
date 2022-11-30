@@ -38,6 +38,17 @@
     font-size: 2rem;
 }
 
+.nav:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.settings:hover {
+    transition: 0.4s ease-in-out;
+    transform: rotate(90deg);
+}
+
+
 
 
 @media screen and (max-width:940px) {

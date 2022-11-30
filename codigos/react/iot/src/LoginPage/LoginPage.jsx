@@ -1,6 +1,8 @@
+// Componentes importados
 import React from "react";
 import Image from "next/image";
 import 'antd/dist/antd.css'; 
+import Link from 'next/link';
 
 import {
   Row,
@@ -21,6 +23,7 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons'
 
 const { Title } = Typography;
 
+//Importação de background css e size
 import background from "../../public/img/backgroundLogin.png";
 import SizeContext from "antd/lib/config-provider/SizeContext";
 
@@ -105,7 +108,7 @@ export default function LoginPage() {
               <Row style= {{justifyContent:'end'}}>
               <Form.Item>
                 <Button type="primary" htmlType="submit" style={{borderRadius:'20px', backgroundColor:'green', border:'none', width:'100px'}} size='large'>
-                  Entrar
+                 <Link href="/dashboard">Entrar</Link>
                 </Button>
               </Form.Item>
               </Row>

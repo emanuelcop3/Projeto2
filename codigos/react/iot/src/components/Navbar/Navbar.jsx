@@ -3,6 +3,8 @@ import Image from 'next/image';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import {BsGear} from 'react-icons/bs'
 import Styles from './Navbar.module.css';
+import Link from 'next/link';
+
 
 import logoGerdau from '../../../public/img/logoGerdau.png'
 
@@ -26,6 +28,8 @@ export default function Navbar() {
                 {click ? (<AiOutlineClose className={Styles.icon} />) : (<AiOutlineMenu className={Styles.icon} />)}
             </div>
             <div className={Styles.settings}>
+            <Link href="http://localhost:3000/center-dash"></Link>
+
                 <BsGear className={Styles.icon}/>
             </div>
         </div>

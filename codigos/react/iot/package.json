@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/charts": "^1.4.2",
+    "@ant-design/charts": "^1.2.14",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.14",
     "antd": "^4.24.2",
+    "antv": "^0.2.2",
+    "chart.js": "^4.0.1",
     "next": "13.0.3",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.0.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0"
   }

@@ -1,16 +1,27 @@
+// Importação de componentes para criação  do dasboard central
 import React, { Fragment, useState, useEffect } from "react";
 import Image from "next/image";
 import "antd/dist/antd.css";
-import {Row, Col, Card, Space, Divider, Button, Heading, Form, Input, Checkbox, Typography, Avatar, Radio} from "antd";
 import { AntDesignOutlined, UserOutlined } from "@ant-design/icons";
 import { GiGreenhouse } from "react-icons/gi";
-import { Line } from '@ant-design/plots';
+
+import {Row, Col, Card, Space, Divider, Button, Heading, Form, Input, Checkbox, Typography, Avatar, Radio} from "antd";
+
+
+
+
+
+
 import DeviceThermostatIcon from "@mui/icons-material/DeviceThermostat";
 import OpacityOutlinedIcon from "@mui/icons-material/OpacityOutlined";
+
+
 
 import { Navbar } from "../components/Navbar";
 
 const { Title, Text } = Typography;
+
+import LineChart from "./Graph";
 
 export default function DashboardCentral() {
   const [value, setValue] = useState(1);
@@ -152,13 +163,14 @@ export default function DashboardCentral() {
           </Card>
           </Row>
           <Row style={{ justifyContent:'center', marginTop: '5%'}}>
-          <Button type='primary'>
-              <a href='https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sP6LLgjoICM46MoHSrlDRXokvGccjPsprD7voHeJab5DZqV7iszh6ZFz28IUoeBDdS30rDvVYmhY/pub?output=csv' target='_blank'>Download CSV</a>
-          </Button>
+            <LineChart/>
           </Row>
         </div>
         </Col>
         <Col span={6} style={{ padding: 10 }}>
+        <Button type='primary'>
+              <a href='https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sP6LLgjoICM46MoHSrlDRXokvGccjPsprD7voHeJab5DZqV7iszh6ZFz28IUoeBDdS30rDvVYmhY/pub?output=csv' target='_blank'>Download CSV</a>
+          </Button>
           <Space direction="vertical">
             <Row></Row>
             <Card bordered="true">
@@ -241,3 +253,6 @@ export default function DashboardCentral() {
     </Fragment>
   );
 }
+
+
+
