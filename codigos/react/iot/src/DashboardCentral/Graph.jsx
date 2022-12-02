@@ -1,3 +1,4 @@
+// criação do gráfico para mostrar dados da planilha que está no google sheets
 import Chart from 'chart.js/auto';
 
 import React, { useState, useEffect } from 'react'
@@ -96,3 +97,9 @@ const LineChart = () => {
 }
 
 export default LineChart
+
+
+
+
+
+
